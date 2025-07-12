@@ -1,0 +1,145 @@
+/* ==== RESET ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  color: #0b3467;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ==== NAVBAR ==== */
+.navbar {
+  background: #0b3467;
+  color: white;
+  padding: 1rem 0;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: white;
+  position: relative;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  bottom: -3px;
+  left: 0;
+  background: white;
+  transition: 0.3s;
+}
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* ==== CONTACT SECTION ==== */
+.contact-section {
+  padding: 4rem 0;
+}
+.contact-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.contact-section p {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+/* ==== FORM ==== */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+.contact-form button {
+  padding: 0.8rem 1rem;
+  background: #0b3467;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.contact-form button:hover {
+  background: #092b53;
+}
+
+/* ==== INFO ==== */
+.contact-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.contact-info p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.social-links img {
+  width: 28px;
+  transition: transform 0.3s;
+}
+.social-links img:hover {
+  transform: scale(1.2);
+}
+
+/* ==== FOOTER ==== */
+.footer {
+  background: #0b3467;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .contact-section h2 {
+    font-size: 2rem;
+  }
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

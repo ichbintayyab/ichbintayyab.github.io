@@ -1,0 +1,152 @@
+/* ========= BASIC STYLES ========= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #0b3467;
+  line-height: 1.7;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0b3467;
+}
+.highlight {
+  color: #0b3467;
+  font-weight: bold;
+}
+
+/* ========= NAVBAR ========= */
+.navbar {
+  background-color: #0b3467;
+  color: white;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+.nav-links a {
+  color: white;
+  font-weight: 500;
+  position: relative;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  bottom: -3px;
+  left: 0;
+  background: white;
+  transition: 0.3s ease;
+}
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* ========= ABOUT SECTION ========= */
+.about {
+  padding: 4rem 0;
+}
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-text {
+  flex: 1 1 60%;
+}
+.about-text p {
+  margin-bottom: 1.2rem;
+  color: #333;
+}
+.about-image {
+  flex: 1 1 35%;
+  text-align: center;
+}
+.about-image img {
+  max-width: 300px;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ========= BUTTON ========= */
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+.primary {
+  background-color: #0b3467;
+  color: white;
+}
+.primary:hover {
+  background-color: #092b53;
+}
+
+/* ========= FOOTER ========= */
+.footer {
+  background: #0b3467;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-links a img {
+  width: 35px;
+  height: 35px;
+  margin-left: 1rem;
+  transition: transform 0.3s;
+}
+.footer-links a img:hover {
+  transform: scale(1.2);
+}
+
+/* ========= RESPONSIVE ========= */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .about-image img {
+    width: 200px;
+  }
+}
