@@ -79,6 +79,44 @@ ul {
   font-weight: 500;
   position: relative;
 }
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: var(--primary-blue);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 99;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-container {
+    position: relative;
+  }
+
+  .nav-links a {
+    padding: 1rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
 .nav-links a::after {
   content: '';
   position: absolute;
