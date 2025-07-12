@@ -313,4 +313,37 @@ ul {
   max-width: 1200px;
   margin: 0 auto;
 }
+/* MOBILE MENU STYLE */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Show menu icon and stack links on mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: var(--primary-blue);
+    width: 100%;
+    padding: 1rem 0;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    text-align: center;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-container {
+    position: relative;
+  }
+}
 
