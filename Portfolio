@@ -1,93 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
   <style>
-    /* Basic styling */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      background: #f4f4f4;
       color: #333;
     }
 
     header {
-      background-color: #333;
+      background: #333;
       color: white;
-      padding: 20px 0;
+      padding: 1.5rem;
       text-align: center;
-    }
-
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
     }
 
     section {
-      padding: 20px;
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
 
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
+    h1, h2 {
+      color: #333;
     }
 
     .project {
-      background-color: #fff;
-      padding: 15px;
-      margin: 10px 0;
-      border: 1px solid #ddd;
+      background: white;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-left: 5px solid #0077cc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <!-- Header Section -->
   <header>
-    <h1>John Doe</h1>
-    <p>Web Developer & Designer</p>
-    <!-- Navigation Links -->
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>Your Name</h1>
+    <p>Web Developer | Designer | Student</p>
   </header>
 
-  <!-- About Section -->
-  <section id="about">
+  <section>
     <h2>About Me</h2>
-    <p>Hello! I'm John, a passionate web developer who enjoys building beautiful and functional websites. I have experience with HTML, CSS, and JavaScript.</p>
+    <p>Hello! I’m a self-taught developer passionate about web technologies. I enjoy creating clean, responsive websites and learning new skills every day.</p>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>My Projects</h2>
+  <section>
+    <h2>Projects</h2>
+    
     <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>A personal portfolio to showcase my skills and projects.</p>
+      <h3>Project One</h3>
+      <p>A simple website built with HTML and CSS.</p>
+      <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
     </div>
+
     <div class="project">
-      <h3>To-Do List App</h3>
-      <p>A simple app to manage daily tasks using JavaScript.</p>
+      <h3>Project Two</h3>
+      <p>A fun JavaScript app that does something cool.</p>
+      <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: john.doe@example.com</p>
-    <p>Phone: +123 456 7890</p>
+  <section>
+    <h2>Contact</h2>
+    <p>Email: your@email.com</p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 John Doe. All rights reserved.</p>
+    &copy; 2025 Your Name. All rights reserved.
   </footer>
 
 </body>
