@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | ichbintayyab</title>
+  <link rel="stylesheet" href="css/contact.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">ichbintayyab</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <h2 data-aos="fade-up">Get in Touch</h2>
+      <p data-aos="fade-up" data-aos-delay="100">Have a project in mind or just want to say hi? Fill out the form below or connect via social media.</p>
+
+      <div class="contact-grid">
+
+        <!-- Contact Form -->
+        <form class="contact-form" action="https://formsubmit.co/ichbintayyab@gmail.com" method="POST" data-aos="fade-right">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="text" name="subject" placeholder="Subject" required />
+          <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+
+          <!-- Optional spam protection (recommended) -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+        </form>
+
+        <!-- Contact Info -->
+        <!-- Contact Info -->
+        <div class="contact-info" data-aos="fade-left">
+          <h3>Contact Info</h3>
+          <div class="info-items">
+            <p><strong>Email:</strong> ichbintayyab@gmail.com</p>
+            <p><strong>Location:</strong> Lahore, Pakistan</p>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/ichbintayyab" target="_blank" rel="noopener">
+              <img src="assets/icons/github.svg" alt="GitHub" />
+            </a>
+            <a href="https://linkedin.com/in/ichbintayyab" target="_blank" rel="noopener">
+              <img src="assets/icons/linkedin.svg" alt="LinkedIn" />
+            </a>
+            <a href="https://twitter.com/ichbintayyab" target="_blank" rel="noopener">
+              <img src="assets/icons/twitter.svg" alt="Twitter" />
+            </a>
+            <a href="https://youtube.com/@ichbintayyab" target="_blank" rel="noopener">
+              <img src="assets/icons/youtube.svg" alt="YouTube" />
+            </a>
+            <a href="https://facebook.com/ichbintayyab" target="_blank" rel="noopener">
+              <img src="assets/icons/facebook.svg" alt="Facebook" />
+            </a>
+            <a href="https://instagram.com/ichbintayyab" target="_blank" rel="noopener">
+              <img src="assets/icons/instagram.svg" alt="Instagram" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2025 Tayyab. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 1000 });
+  </script>
+</body>
+</html>
