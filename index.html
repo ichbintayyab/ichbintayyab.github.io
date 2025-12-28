@@ -166,33 +166,63 @@
   </div>
 </footer>
 
-<!-- ================= TYPING JS ================= -->
 <script>
-  const texts = ["Frontend Web Developer", "Python Developer", "Sketch Artist"];
-  let i = 0, j = 0;
+  /* ================= MOBILE NAVBAR TOGGLE ================= */
+
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  if (menuBtn && mobileMenu) {
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // Auto close menu on link click (mobile UX)
+    document.querySelectorAll("#mobileMenu a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    });
+  }
+
+  /* ================= TYPING TEXT ANIMATION ================= */
+
+  const texts = [
+    "Frontend Web Developer",
+    "Python Developer",
+    "Sketch Artist"
+  ];
+
+  let i = 0;
+  let j = 0;
   const el = document.getElementById("typingText");
 
-  function type() {
-    if (j < texts[i].length) {
-      el.textContent += texts[i][j++];
-      setTimeout(type, 90);
-    } else {
-      setTimeout(erase, 1200);
+  if (el) {
+    function type() {
+      if (j < texts[i].length) {
+        el.textContent += texts[i][j++];
+        setTimeout(type, 90);
+      } else {
+        setTimeout(erase, 1200);
+      }
     }
-  }
 
-  function erase() {
-    if (j > 0) {
-      el.textContent = texts[i].substring(0, --j);
-      setTimeout(erase, 50);
-    } else {
-      i = (i + 1) % texts.length;
-      setTimeout(type, 400);
+    function erase() {
+      if (j > 0) {
+        el.textContent = texts[i].substring(0, --j);
+        setTimeout(erase, 50);
+      } else {
+        i = (i + 1) % texts.length;
+        setTimeout(type, 400);
+      }
     }
+
+    type();
   }
-  type();
 </script>
+
 
 </body>
 </html>
+
 
