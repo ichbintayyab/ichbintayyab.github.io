@@ -1,0 +1,78 @@
+/* -----------------------------
+   Text typing animation
+-------------------------------*/
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+.typing-text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #0b3467;
+    animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
+}
+
+/* Blink cursor */
+@keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: #0b3467; }
+}
+
+/* Fade In */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+/* Slide Up */
+.slide-up {
+    transform: translateY(30px);
+    opacity: 0;
+    animation: slideUp 0.8s forwards;
+}
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Button Hover Glow */
+.button-glow:hover {
+    box-shadow: 0 0 15px #0b3467;
+    transform: scale(1.05);
+}
+
+/* Card Hover */
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 35px rgba(11,52,103,0.8);
+}
+
+/* Social icon hover */
+.social-icon {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+/* Circular highlight effect for nav active page */
+.nav-circle {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #0b3467;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+}

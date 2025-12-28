@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | ichbintayyab</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0b3467',
+            lightbg: '#e8f1fc'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .neon-glow {
+      box-shadow: 0 0 20px rgba(11,52,103,0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .neon-glow:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 35px rgba(11,52,103,0.8);
+    }
+
+    .nav-link {
+      position: relative;
+      padding-bottom: 4px;
+    }
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0%;
+      height: 2px;
+      background: white;
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover::after,
+    .nav-active::after {
+      width: 100%;
+    }
+    .nav-link:hover {
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body class="bg-lightbg text-primary min-h-screen flex flex-col">
+
+<!-- ================= NAVBAR ================= -->
+<header class="bg-primary text-white fixed w-full z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <a href="../index.html" class="text-xl font-bold">ichbintayyab</a>
+
+    <nav class="hidden md:flex gap-8 text-sm">
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="projects.html" class="nav-link nav-active">Projects</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= PROJECTS SECTION ================= -->
+<main class="flex-grow pt-32 px-6">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-4xl font-bold mb-10">My Projects</h2>
+
+    <!-- PROJECT GRID -->
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Project 1 -->
+      <div class="bg-white p-6 rounded-xl neon-glow">
+        <img src="../assets/images/projects/project1.png" alt="Project 1" class="rounded-md mb-4">
+        <h3 class="font-bold text-xl mb-2">To-Do Web App</h3>
+        <p class="mb-4 text-sm">A responsive To-Do List app built with HTML CSS JS. Users can add, delete, and mark tasks complete.</p>
+        <div class="flex gap-3">
+          <a href="#" target="_blank" class="px-4 py-2 bg-primary text-white rounded hover:scale-105 transition">Live Demo</a>
+          <a href="https://github.com/ichbintayyab/todo-app" target="_blank" class="px-4 py-2 border-2 border-primary rounded hover:bg-primary hover:text-white transition">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-white p-6 rounded-xl neon-glow">
+        <img src="../assets/images/projects/project2.png" alt="Project 2" class="rounded-md mb-4">
+        <h3 class="font-bold text-xl mb-2">Tic-Tac-Toe Game</h3>
+        <p class="mb-4 text-sm">A Python GUI (Tkinter) Tic-Tac-Toe with 2-player or 1-player vs AI, winning highlight, and reset button. Simple, colorful, and interactive.</p>
+        <div class="flex gap-3">
+          <a href="#" target="_blank" class="px-4 py-2 bg-primary text-white rounded hover:scale-105 transition">Live Demo</a>
+          <a href="https://github.com/ichbintayyab/number-guessing-game" target="_blank" class="px-4 py-2 border-2 border-primary rounded hover:bg-primary hover:text-white transition">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-white p-6 rounded-xl neon-glow">
+        <img src="../assets/images/projects/project3.png" alt="Project 3" class="rounded-md mb-4">
+        <h3 class="font-bold text-xl mb-2">Personal Portfolio</h3>
+        <p class="mb-4 text-sm">My own portfolio website built using HTML, Tailwind CSS, and JavaScript, showcasing projects and skills.</p>
+        <div class="flex gap-3">
+          <a href="#" target="_blank" class="px-4 py-2 bg-primary text-white rounded hover:scale-105 transition">Live Demo</a>
+          <a href="https://github.com/ichbintayyab/portfolio" target="_blank" class="px-4 py-2 border-2 border-primary rounded hover:bg-primary hover:text-white transition">GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-primary text-white mt-20">
+  <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-6">
+
+    <p class="text-sm">© 2025 ichbintayyab | All rights reserved.</p>
+
+    <div class="flex gap-5">
+      <a href="https://github.com/ichbintayyab" target="_blank">
+        <img src="../assets/images/icons/github.png" class="w-6 hover:scale-110 transition" alt="GitHub">
+      </a>
+      <a href="https://linkedin.com/in/ichbintayyab" target="_blank">
+        <img src="../assets/images/icons/linkedin.png" class="w-6 hover:scale-110 transition" alt="LinkedIn">
+      </a>
+      <a href="https://twitter.com/ichbintayyab" target="_blank">
+        <img src="../assets/images/icons/twitter.png" class="w-6 hover:scale-110 transition" alt="Twitter">
+      </a>
+      <a href="https://facebook.com/ichbintayyab" target="_blank">
+        <img src="../assets/images/icons/facebook.png" class="w-6 hover:scale-110 transition" alt="Facebook">
+      </a>
+      <a href="https://instagram.com/ichbintayyab" target="_blank">
+        <img src="../assets/images/icons/instagram.png" class="w-6 hover:scale-110 transition" alt="Instagram">
+      </a>
+      <a href="https://youtube.com/@ichbintayyab" target="_blank">
+        <img src="../assets/images/icons/youtube.png" class="w-6 hover:scale-110 transition" alt="YouTube">
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>

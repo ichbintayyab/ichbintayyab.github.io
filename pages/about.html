@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About | ichbintayyab</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0b3467',
+            lightbg: '#e8f1fc'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .neon-glow {
+      box-shadow: 0 0 30px rgba(11,52,103,0.6);
+    }
+    .nav-link {
+      position: relative;
+      padding-bottom: 4px;
+    }
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0%;
+      height: 2px;
+      background: white;
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover::after,
+    .nav-active::after {
+      width: 100%;
+    }
+    .nav-link:hover {
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body class="bg-lightbg text-primary min-h-screen flex flex-col">
+
+<!-- ================= NAVBAR ================= -->
+<header class="bg-primary text-white fixed w-full z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    <a href="../index.html" class="text-xl font-bold">ichbintayyab</a>
+
+    <nav class="hidden md:flex gap-8 text-sm">
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link nav-active">About</a>
+      <a href="projects.html" class="nav-link">Projects</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= ABOUT SECTION ================= -->
+<main class="flex-grow pt-32 px-6">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+
+    <!-- LEFT IMAGE -->
+    <div class="relative flex justify-center">
+      <div class="absolute w-80 h-80 bg-primary rounded-full blur-3xl opacity-30"></div>
+      <img src="../assets/images/profile/profile.jpg"
+           class="w-72 h-72 rounded-full object-cover neon-glow relative z-10"
+           alt="Muhammad Tayyab Saleem">
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div>
+      <h2 class="text-4xl font-bold mb-6">About Me</h2>
+
+      <p class="mb-4 leading-relaxed">
+        My name is <strong>Muhammad Tayyab Saleem</strong>, and I am a passionate
+        Software Engineering student from Lahore, Pakistan. I am currently pursuing
+        my BS in Software Engineering from Lahore Garrison University, and I have
+        successfully completed two semesters.
+      </p>
+
+      <p class="mb-4 leading-relaxed">
+        I have strong knowledge of <strong>Frontend Web Development</strong> and
+        <strong>Python programming</strong>, and I continuously improve my skills
+        through platforms like Udemy, Coursera, and YouTube. AI has played a major
+        role in making my learning journey easier and more efficient.
+      </p>
+
+      <p class="mb-4 leading-relaxed">
+        My long-term goal is to deeply learn <strong>Artificial Intelligence</strong>,
+        understand how AI systems are built, and eventually move towards the concept
+        of <strong>Artificial General Intelligence (AGI)</strong>.
+      </p>
+
+      <p class="mb-6 leading-relaxed">
+        Outside of coding, I enjoy learning new technologies, watching tech videos,
+        pencil sketching, and occasionally playing games. I believe in clean work,
+        continuous learning, and professional ethics.
+      </p>
+
+      <!-- CTA BUTTONS -->
+      <div class="flex gap-4 mt-6">
+        <a href="https://wa.me/923424755177
+" target="_blank"
+           class="bg-primary text-white px-6 py-3 rounded-full neon-glow hover:scale-105 transition">
+          Contact Me
+        </a>
+
+        <a href="../assets/cv/Muhammad-Tayyab-Saleem-CV.pdf"
+           class="border-2 border-primary px-6 py-3 rounded-full hover:bg-primary hover:text-white transition">
+          Download CV
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= EXTRA INFO CARDS ================= -->
+  <div class="max-w-7xl mx-auto mt-20 grid md:grid-cols-3 gap-8">
+    <div class="bg-white p-6 rounded-xl neon-glow">
+      <h3 class="font-bold text-lg mb-2">Education</h3>
+      <p>BS Software Engineering<br>Lahore Garrison University<br>2 Semesters Completed</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl neon-glow">
+      <h3 class="font-bold text-lg mb-2">Skills</h3>
+      <p>Frontend Development<br>Python Programming<br>Pencil Sketching</p>
+    </div>
+
+    <div class="bg-white p-6 rounded-xl neon-glow">
+      <h3 class="font-bold text-lg mb-2">Mission</h3>
+      <p>My mission is to create AI that understands emotions and improves human life.</p>
+    </div>
+  </div>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-primary text-white mt-20">
+  <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-6">
+
+    <p class="text-sm">© 2025 ichbintayyab | All rights reserved.</p>
+
+    <div class="flex gap-5">
+      <a href="https://github.com/ichbintayyab" target="_blank">
+        <img src="../assets/images/icons/github.png" class="w-6 hover:scale-110 transition" alt="GitHub">
+      </a>
+      <a href="https://linkedin.com/in/ichbintayyab" target="_blank">
+        <img src="../assets/images/icons/linkedin.png" class="w-6 hover:scale-110 transition" alt="LinkedIn">
+      </a>
+      <a href="https://twitter.com/ichbintayyab" target="_blank">
+        <img src="../assets/images/icons/twitter.png" class="w-6 hover:scale-110 transition" alt="Twitter">
+      </a>
+      <a href="https://facebook.com/ichbintayyab" target="_blank">
+        <img src="../assets/images/icons/facebook.png" class="w-6 hover:scale-110 transition" alt="Facebook">
+      </a>
+      <a href="https://instagram.com/ichbintayyab" target="_blank">
+        <img src="../assets/images/icons/instagram.png" class="w-6 hover:scale-110 transition" alt="Instagram">
+      </a>
+      <a href="https://youtube.com/@ichbintayyab" target="_blank">
+        <img src="../assets/images/icons/youtube.png" class="w-6 hover:scale-110 transition" alt="YouTube">
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
