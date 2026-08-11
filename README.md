@@ -15,5 +15,4 @@ A modern personal portfolio website showcasing skills, projects, and blog posts.
 - HTML / CSS / JavaScript
 - React / Next.js
 - Tailwind CSS / Bootstrap
-.
-
+ .
