@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Blog 1 Title",
+    "shortDesc": "This is a short description of blog 1.",
+    "content": "<p>Full content of Blog 1 goes here. You can also add <img src='assets/images/blog1.jpg' alt='Blog1'></p>",
+    "date": "2025-12-27"
+  },
+  {
+    "id": 2,
+    "title": "Blog 2 Title",
+    "shortDesc": "This is a short description of blog 2.",
+    "content": "<p>Full content of Blog 2 goes here. Add images as needed.</p>",
+    "date": "2025-12-26"
+  },
+  {
+    "id": 3,
+    "title": "Blog 3 Title",
+    "shortDesc": "This is a short description of blog 3.",
+    "content": "<p>Full content of Blog 3 goes here. Images can be added later.</p>",
+    "date": "2025-12-25"
+  }
+]
