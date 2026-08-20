@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | ichbintayyab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/shared.css">
+  <link rel="stylesheet" href="../assets/css/contact.css">
+</head>
+<body>
+  <div class="cur" id="cur"></div>
+  <div class="cur-ring" id="curRing"></div>
+  <header class="nav" id="nav">
+    <div class="nav-in">
+      <a href="../index.html" class="nav-logo">ichbin<span>tayyab</span></a>
+      <nav><ul class="nav-links">
+        <li><a href="../index.html">Home</a></li><li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li><li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active nav-cta">Contact</a></li>
+      </ul></nav>
+      <button class="ham" id="ham" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mob-menu" id="mobMenu"><ul>
+    <li><a href="../index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
+  </ul></div>
+  <main>
+    <div class="page-hero">
+      <div class="page-hero-bg" aria-hidden="true"></div>
+      <div class="page-hero-in">
+        <div class="pg-label rv">Let's Connect</div>
+        <h1 class="page-title rv d1">Say <span class="grad-text">Hello</span></h1>
+        <p class="page-sub rv d2">Whether it's a project idea, a collaboration, an internship opportunity, or just a conversation — I'm always happy to hear from you.</p>
+        <div class="avail-badge rv d3">
+          <span class="avail-dot" aria-hidden="true"></span>
+          Available for work &amp; collaborations
+        </div>
+      </div>
+    </div>
+    <section class="contact-sec">
+      <div class="contact-in">
+        <div class="form-card rv">
+          <h2 class="form-title">Send a Message</h2>
+          <p class="form-sub">Fill in the form and I'll get back to you as soon as possible.</p>
+          <form id="contactForm" novalidate>
+            <div class="field">
+              <label class="field-label" for="name">Your Name</label>
+              <input type="text" id="name" name="name" class="field-input" placeholder="Muhammad Ali" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label class="field-label" for="email">Email Address</label>
+              <input type="email" id="email" name="email" class="field-input" placeholder="you@example.com" required autocomplete="email">
+            </div>
+            <div class="field">
+              <label class="field-label" for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" class="field-input" placeholder="Project collaboration, internship, just saying hi..." required>
+            </div>
+            <div class="field">
+              <label class="field-label" for="message">Message</label>
+              <textarea id="message" name="message" class="field-input" placeholder="Tell me about your project, question, or idea..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn" id="submitBtn">
+              <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message
+            </button>
+            <p id="statusMsg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+        <div class="info-panel">
+          <div class="info-card rv d1">
+            <div class="info-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+            <div>
+              <div class="info-label">Email</div>
+              <div class="info-val"><a href="mailto:ichbintayyab@gmail.com">ichbintayyab@gmail.com</a></div>
+              <div class="info-note">I typically reply within 24 hours.</div>
+            </div>
+          </div>
+          <div class="info-card rv d2">
+            <div class="info-icon"><i class="fab fa-whatsapp" aria-hidden="true"></i></div>
+            <div>
+              <div class="info-label">WhatsApp</div>
+              <div class="info-val"><a href="https://wa.me/923424755177" target="_blank" rel="noopener">+92 342 4755177</a></div>
+              <div class="info-note">For quick conversations and questions.</div>
+            </div>
+          </div>
+          <div class="info-card rv d3">
+            <div class="info-icon"><i class="fas fa-location-dot" aria-hidden="true"></i></div>
+            <div>
+              <div class="info-label">Location</div>
+              <div class="info-val">Lahore, Pakistan 🇵🇰</div>
+              <div class="info-note">Open to remote work globally.</div>
+            </div>
+          </div>
+          <div class="socials-card rv d3">
+            <div class="socials-label">Find me on social media</div>
+            <div class="socials-grid">
+              <a href="https://github.com/ichbintayyab" target="_blank" rel="noopener" class="soc-btn" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i>GitHub</a>
+              <a href="https://linkedin.com/in/ichbintayyab" target="_blank" rel="noopener" class="soc-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i>LinkedIn</a>
+              <a href="https://twitter.com/ichbintayyab" target="_blank" rel="noopener" class="soc-btn" aria-label="Twitter"><i class="fab fa-x-twitter" aria-hidden="true"></i>Twitter</a>
+              <a href="https://instagram.com/ichbintayyab" target="_blank" rel="noopener" class="soc-btn" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i>Instagram</a>
+              <a href="https://facebook.com/ichbintayyab" target="_blank" rel="noopener" class="soc-btn" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i>Facebook</a>
+              <a href="https://youtube.com/@ichbintayyab" target="_blank" rel="noopener" class="soc-btn" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i>YouTube</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="ft-in">
+    <a href="../index.html" class="ft-logo">ichbin<span>tayyab</span></a>
+    <ul class="ft-nav"><li><a href="../index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <div class="ft-socials">
+      <a href="https://github.com/ichbintayyab" target="_blank" rel="noopener" class="ft-soc" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+      <a href="https://linkedin.com/in/ichbintayyab" target="_blank" rel="noopener" class="ft-soc" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/ichbintayyab" target="_blank" rel="noopener" class="ft-soc" aria-label="Twitter"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+      <a href="https://facebook.com/ichbintayyab" target="_blank" rel="noopener" class="ft-soc" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+      <a href="https://instagram.com/ichbintayyab" target="_blank" rel="noopener" class="ft-soc" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://youtube.com/@ichbintayyab" target="_blank" rel="noopener" class="ft-soc" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+    </div>
+    <p class="ft-copy">© 2026 ichbintayyab · All rights reserved.</p>
+  </div></footer>
+  <script src="../assets/js/shared.js"></script>
+  <script src="../assets/js/contact.js"></script>
+</body>
+</html>

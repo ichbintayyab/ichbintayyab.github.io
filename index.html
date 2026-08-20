@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ichbintayyab | Portfolio</title>
+  <meta name="description" content="Muhammad Tayyab Saleem — Frontend Developer, Python Developer & Sketch Artist from Lahore, Pakistan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/shared.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+
+  <div class="cur" id="cur"></div>
+  <div class="cur-ring" id="curRing"></div>
+
+  <div id="loader">
+    <div class="ld-logo" id="ldLogo">ichbin<span>tayyab</span></div>
+    <div class="ld-bar"><div class="ld-fill" id="ldFill"></div></div>
+  </div>
+
+  <header class="nav" id="nav">
+    <div class="nav-in">
+      <a href="index.html" class="nav-logo">ichbin<span>tayyab</span></a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/projects.html">Projects</a></li>
+          <li><a href="pages/blog.html">Blog</a></li>
+          <li><a href="pages/contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="ham" id="ham" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mob-menu" id="mobMenu" role="dialog" aria-label="Mobile navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pages/about.html">About</a></li>
+      <li><a href="pages/projects.html">Projects</a></li>
+      <li><a href="pages/blog.html">Blog</a></li>
+      <li><a href="pages/contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <canvas id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-in">
+        <div class="hero-left">
+          <div class="h-badge">
+            <span>Based in Lahore, Pakistan — Open to Work</span>
+          </div>
+          <h1 class="h-name">
+            <span class="h-name-hi">Hi, I'm</span>
+            <span class="h-grad">Tayyab</span>
+          </h1>
+          <p class="h-sub">and I'm a</p>
+          <div class="h-typing-wrap">
+            <span class="h-typing" id="typingEl" aria-live="polite"></span><span class="h-caret" aria-hidden="true"></span>
+          </div>
+          <p class="h-desc">
+            A passionate Software Engineering student building elegant web experiences,
+            exploring Python, and driven by a long-term fascination with Artificial Intelligence and AGI.
+          </p>
+          <div class="h-actions">
+            <a href="https://wa.me/923424755177" target="_blank" rel="noopener" class="btn-p mag">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i> Contact Me
+            </a>
+            <a href="assets/cv/CV_Muhammad_Tayyab_Saleem.pdf" class="btn-s mag">
+              <i class="fas fa-download" aria-hidden="true"></i> Download CV
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual" data-reveal data-reveal-delay="2">
+          <div class="portrait-wrap float-slow">
+            <svg class="portrait-ring spin-slow" viewBox="0 0 200 200" aria-hidden="true">
+              <circle cx="100" cy="100" r="98"/>
+            </svg>
+            <img class="portrait-img" src="assets/images/profile/profile.jpg" alt="Portrait of Muhammad Tayyab Saleem">
+            <span class="portrait-tag t1 mono">BS Software Engg.</span>
+            <span class="portrait-tag t2 mono">Sketch artist</span>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="hero-scroll-ind" id="scrollInd" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="mqTrack"></div>
+    </div>
+
+    <!-- ABOUT PREVIEW -->
+    <section class="sec about-sec" id="about">
+      <div class="sec-in">
+        <div class="about-grid">
+          <div>
+            <div class="label rv">About Me</div>
+            <h2 class="sec-title rv d1">Crafting digital experiences<br>with purpose & precision</h2>
+            <p class="sec-sub rv d2">
+              I'm Muhammad Tayyab Saleem, a BS Software Engineering student at Lahore Garrison University.
+              I specialize in Frontend Development and Python, continuously learning through platforms like
+              Udemy and Coursera, with a long-term vision toward AI and AGI research.
+            </p>
+            <div class="about-stats rv d3">
+              <div class="stat"><span class="stat-n">2+</span><span class="stat-l">Semesters</span></div>
+              <div class="stat"><span class="stat-n">3+</span><span class="stat-l">Projects</span></div>
+              <div class="stat"><span class="stat-n">∞</span><span class="stat-l">Curiosity</span></div>
+            </div>
+            <div class="rv d4">
+              <a href="pages/about.html" class="btn-p" style="display:inline-flex">
+                Full Story <i class="fas fa-arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="about-img-wrap rv d2">
+            <div class="about-img-box">
+              <img src="assets/images/profile/profile.jpg" alt="Muhammad Tayyab Saleem"
+                   onerror="this.style.opacity=0">
+            </div>
+            <div class="about-float">
+              <div class="about-float-label">Currently studying</div>
+              <div class="about-float-val">
+                <i class="fas fa-graduation-cap" style="color:var(--blue-soft)" aria-hidden="true"></i>
+                BS Software Engineering
+              </div>
+              <div class="about-float-sub">Lahore Garrison University</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="sec" id="skills">
+      <div class="sec-in">
+        <div class="label rv">Capabilities</div>
+        <h2 class="sec-title rv d1">My Tech Stack</h2>
+        <div class="skills-grid">
+          <div class="skill rv d1"><i class="fab fa-html5" aria-hidden="true"></i>HTML5</div>
+          <div class="skill rv d1"><i class="fab fa-css3-alt" aria-hidden="true"></i>CSS3</div>
+          <div class="skill rv d2"><i class="fab fa-js" aria-hidden="true"></i>JavaScript</div>
+          <div class="skill rv d2"><i class="fab fa-python" aria-hidden="true"></i>Python</div>
+          <div class="skill rv d3"><i class="fas fa-wind" aria-hidden="true"></i>Tailwind CSS</div>
+          <div class="skill rv d3"><i class="fab fa-git-alt" aria-hidden="true"></i>Git & GitHub</div>
+          <div class="skill rv d4"><i class="fas fa-brain" aria-hidden="true"></i>AI / ML</div>
+          <div class="skill rv d4"><i class="fas fa-mobile-screen" aria-hidden="true"></i>Responsive Design</div>
+          <div class="skill rv d5"><i class="fas fa-pencil" aria-hidden="true"></i>Sketch Art</div>
+          <div class="skill rv d5"><i class="fas fa-terminal" aria-hidden="true"></i>CLI Tools</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS PREVIEW -->
+    <section class="sec" style="background:var(--surface)" id="projects">
+      <div class="sec-in">
+        <div class="sec-head">
+          <div>
+            <div class="label rv">Portfolio</div>
+            <h2 class="sec-title rv d1">Featured Projects</h2>
+          </div>
+          <a href="pages/projects.html" class="btn-s rv" style="display:inline-flex;align-items:center;gap:.5rem">
+            All Projects <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="proj-grid">
+          <article class="p-card rv d1 tilt">
+            <div class="p-img">
+              <img src="assets/images/projects/project1.png" alt="To-Do Web App screenshot"
+                   onerror="this.style.display='none';this.parentElement.querySelector('.p-img-ph').style.display='flex'">
+              <div class="p-img-ph" style="display:none" aria-hidden="true">✅</div>
+              <div class="p-num" aria-hidden="true">01</div>
+            </div>
+            <div class="p-body">
+              <div class="p-tags"><span class="p-tag">HTML</span><span class="p-tag">CSS</span><span class="p-tag">JavaScript</span></div>
+              <h3 class="p-title">To-Do Web App</h3>
+              <p class="p-desc">A responsive task management app with add, delete, and completion tracking. Clean UI with intuitive interactions.</p>
+              <div class="p-links">
+                <a href="https://ichbintayyab.github.io/to-do-web-app.github.io" target="_blank" rel="noopener" class="btn-sm-p"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo</a>
+                <a href="https://github.com/ichbintayyab/to-do-web-app.github.io" target="_blank" rel="noopener" class="btn-sm-s"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+          <article class="p-card rv d2 tilt">
+            <div class="p-img">
+              <img src="assets/images/projects/project2.png" alt="Tic-Tac-Toe Game screenshot"
+                   onerror="this.style.display='none';this.parentElement.querySelector('.p-img-ph').style.display='flex'">
+              <div class="p-img-ph" style="display:none" aria-hidden="true">🎮</div>
+              <div class="p-num" aria-hidden="true">02</div>
+            </div>
+            <div class="p-body">
+              <div class="p-tags"><span class="p-tag">Python</span><span class="p-tag">Tkinter</span><span class="p-tag">AI Logic</span></div>
+              <h3 class="p-title">Tic-Tac-Toe Game</h3>
+              <p class="p-desc">A Python Tkinter GUI game with 2-player and AI opponent modes, win highlighting, and clean reset functionality.</p>
+              <div class="p-links">
+                <a href="https://ichbintayyab.github.io/tic-tac-toe-game.github.io" target="_blank" rel="noopener" class="btn-sm-p"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo</a>
+                <a href="https://github.com/ichbintayyab/tic-tac-toe-game.github.io.git" target="_blank" rel="noopener" class="btn-sm-s"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+          <article class="p-card rv d3 tilt">
+            <div class="p-img">
+              <img src="assets/images/projects/project3.png" alt="Personal Portfolio screenshot"
+                   onerror="this.style.display='none';this.parentElement.querySelector('.p-img-ph').style.display='flex'">
+              <div class="p-img-ph" style="display:none" aria-hidden="true">🌐</div>
+              <div class="p-num" aria-hidden="true">03</div>
+            </div>
+            <div class="p-body">
+              <div class="p-tags"><span class="p-tag">HTML</span><span class="p-tag">Tailwind</span><span class="p-tag">JavaScript</span></div>
+              <h3 class="p-title">Personal Portfolio</h3>
+              <p class="p-desc">My portfolio website showcasing projects, blogs, and skills — built with HTML, Tailwind CSS, and vanilla JavaScript.</p>
+              <div class="p-links">
+                <a href="https://ichbintayyab.github.io/" target="_blank" rel="noopener" class="btn-sm-p"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Live Demo</a>
+                <a href="https://github.com/ichbintayyab/ichbintayyab.github.io" target="_blank" rel="noopener" class="btn-sm-s"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG PREVIEW -->
+    <section class="sec blog-sec" id="blog">
+      <div class="sec-in">
+        <div class="sec-head">
+          <div>
+            <div class="label rv">Writing</div>
+            <h2 class="sec-title rv d1">Latest Articles</h2>
+          </div>
+          <a href="pages/blog.html" class="btn-s rv" style="display:inline-flex;align-items:center;gap:.5rem">
+            All Articles <i class="fas fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="blog-grid">
+          <a href="pages/blog1.html" class="b-card rv d1">
+            <div class="b-img">
+              <img src="assets/images/blogs/blog1.jpg" alt=""
+                   onerror="this.style.display='none';this.parentElement.querySelector('.b-img-ph').style.display='flex'">
+              <div class="b-img-ph" style="display:none" aria-hidden="true">✍️</div>
+            </div>
+            <div class="b-body">
+              <div class="b-cat">Personal Growth</div>
+              <div class="b-title">My Journey Into Software Engineering</div>
+              <p class="b-exc">A glimpse into my journey and key learning experiences in the world of software engineering.</p>
+              <span class="b-more">Read Article <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+            </div>
+          </a>
+          <a href="pages/blog2.html" class="b-card rv d2">
+            <div class="b-img">
+              <img src="assets/images/blogs/blog2.jpg" alt=""
+                   onerror="this.style.display='none';this.parentElement.querySelector('.b-img-ph').style.display='flex'">
+              <div class="b-img-ph" style="display:none" aria-hidden="true">💻</div>
+            </div>
+            <div class="b-body">
+              <div class="b-cat">Developer Life</div>
+              <div class="b-title">The Engineer's Existential Crisis</div>
+              <p class="b-exc">Inside a dev's brain at 2 AM: when a missing semicolon finally confesses and "it works on my machine" is evidence.</p>
+              <span class="b-more">Read Article <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+            </div>
+          </a>
+          <a href="pages/blog3.html" class="b-card rv d3">
+            <div class="b-img">
+              <img src="assets/images/blogs/blog3.jpg" alt=""
+                   onerror="this.style.display='none';this.parentElement.querySelector('.b-img-ph').style.display='flex'">
+              <div class="b-img-ph" style="display:none" aria-hidden="true">🤖</div>
+            </div>
+            <div class="b-body">
+              <div class="b-cat">AI & Technology</div>
+              <div class="b-title">The Architecture of Thought: Human vs AI</div>
+              <p class="b-exc">Human intuition feels and understands; AI calculates and predicts. Where exactly is the dividing line?</p>
+              <span class="b-more">Read Article <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="sec cta-sec">
+      <div class="cta-bg" aria-hidden="true"></div>
+      <div class="sec-in">
+        <div class="cta-in">
+          <div class="label rv" style="justify-content:center">Let's Connect</div>
+          <h2 class="sec-title rv d1">Have a project in mind?</h2>
+          <p class="sec-sub rv d2" style="margin:0 auto;text-align:center">
+            Whether it's a collaboration, a question, or just saying hi — I'd love to hear from you.
+          </p>
+          <div class="cta-actions rv d3">
+            <a href="mailto:ichbintayyab@gmail.com" class="btn-p mag">
+              <i class="fas fa-envelope" aria-hidden="true"></i> Send Email
+            </a>
+            <a href="pages/contact.html" class="btn-s mag">
+              Contact Page <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="ft-in">
+      <a href="index.html" class="ft-logo">ichbin<span>tayyab</span></a>
+      <ul class="ft-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/projects.html">Projects</a></li>
+        <li><a href="pages/blog.html">Blog</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+      <div class="ft-socials">
+        <a href="https://github.com/ichbintayyab" target="_blank" rel="noopener" class="ft-soc" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+        <a href="https://linkedin.com/in/ichbintayyab" target="_blank" rel="noopener" class="ft-soc" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/ichbintayyab" target="_blank" rel="noopener" class="ft-soc" aria-label="X / Twitter"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+        <a href="https://facebook.com/ichbintayyab" target="_blank" rel="noopener" class="ft-soc" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+        <a href="https://instagram.com/ichbintayyab" target="_blank" rel="noopener" class="ft-soc" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://youtube.com/@ichbintayyab" target="_blank" rel="noopener" class="ft-soc" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+      </div>
+      <p class="ft-copy">© 2026 ichbintayyab · All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="assets/js/shared.js"></script>
+  <script src="assets/js/index.js"></script>
+
+</body>
+</html>

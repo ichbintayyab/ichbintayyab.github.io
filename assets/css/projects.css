@@ -1,0 +1,48 @@
+/* ============================================================
+   PROJECTS PAGE CSS — ichbintayyab Portfolio
+   Loaded by: pages/projects.html
+============================================================ */
+
+/* === SECTION BASE (projects version) === */
+.sec { padding: 5rem 0; }
+.sec-in { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+
+/* === BUTTON OVERRIDES — smaller size for project link buttons === */
+.btn-p { display: inline-flex; align-items: center; gap: .45rem; padding: .75rem 1.6rem; background: var(--blue); color: #fff; font-size: .82rem; font-weight: 600; border-radius: 50px; transition: box-shadow .3s, transform .3s; position: relative; overflow: hidden; }
+.btn-p::before { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(255,255,255,.18), transparent); opacity: 0; transition: opacity .3s; }
+.btn-p:hover { box-shadow: 0 6px 28px rgba(79,125,247,.45); transform: translateY(-2px); }
+.btn-p:hover::before { opacity: 1; }
+.btn-s { display: inline-flex; align-items: center; gap: .45rem; padding: .75rem 1.6rem; border: 1px solid var(--border); color: var(--muted); font-size: .82rem; font-weight: 500; border-radius: 50px; background: var(--glass); transition: all .3s; }
+.btn-s:hover { border-color: rgba(79,125,247,.4); color: var(--text); transform: translateY(-2px); }
+
+/* === PROJECT LIST — large editorial layout === */
+.proj-list { display: flex; flex-direction: column; gap: 2.5rem; }
+.proj-item { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--border); border-radius: 24px; overflow: hidden; background: var(--glass); transition: border-color .4s, box-shadow .4s; will-change: transform; }
+.proj-item:hover { border-color: rgba(79,125,247,.3); box-shadow: 0 24px 70px rgba(0,0,0,.5), 0 0 0 1px rgba(79,125,247,.07); }
+.proj-item:nth-child(even) { direction: rtl; }
+.proj-item:nth-child(even) .proj-body { direction: ltr; }
+.proj-img { position: relative; overflow: hidden; background: var(--surface); min-height: 360px; }
+.proj-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; display: block; }
+.proj-item:hover .proj-img img { transform: scale(1.05); }
+.proj-img-ph { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(145deg,var(--surface),#132240); font-size: 5rem; min-height: 360px; }
+.proj-num { position: absolute; top: 1.25rem; left: 1.25rem; font-family: 'Plus Jakarta Sans', sans-serif; font-size: .7rem; font-weight: 800; color: var(--blue-soft); background: rgba(6,12,24,.85); backdrop-filter: blur(10px); padding: .25rem .8rem; border-radius: 50px; border: 1px solid rgba(79,125,247,.3); letter-spacing: .06em; }
+.proj-item:nth-child(even) .proj-num { left: auto; right: 1.25rem; }
+.proj-body { padding: 3rem; display: flex; flex-direction: column; justify-content: center; }
+.proj-tags { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1.25rem; }
+.proj-tag { font-size: .68rem; padding: .22rem .7rem; background: rgba(79,125,247,.12); color: var(--blue-soft); border-radius: 50px; font-weight: 600; letter-spacing: .02em; }
+.proj-title { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.6rem; font-weight: 800; letter-spacing: -.025em; line-height: 1.2; margin-bottom: 1rem; }
+.proj-desc { font-size: .9rem; color: var(--muted); line-height: 1.85; margin-bottom: 2rem; }
+.proj-links { display: flex; gap: .75rem; flex-wrap: wrap; }
+
+/* === CTA STRIP === */
+.cta-strip { background: var(--surface); border-top: 1px solid var(--border); padding: 5rem 0; text-align: center; }
+.cta-strip-in { max-width: 520px; margin: 0 auto; padding: 0 2rem; }
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+  .proj-item, .proj-item:nth-child(even) { grid-template-columns: 1fr; direction: ltr; }
+  .proj-img { min-height: 260px; }
+  .proj-img-ph { min-height: 260px; }
+  .proj-body { padding: 2rem; }
+  .proj-item:nth-child(even) .proj-num { right: auto; left: 1.25rem; }
+}

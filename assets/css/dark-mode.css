@@ -1,0 +1,56 @@
+/* -----------------------------
+   Dark Mode Styles
+-------------------------------*/
+
+body.dark-mode {
+    background-color: #0b3467;
+    color: #e8f1fc;
+}
+
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4, body.dark-mode h5, body.dark-mode h6 {
+    color: #ffffff;
+}
+
+body.dark-mode header {
+    background-color: #071f3e;
+}
+
+body.dark-mode footer {
+    background-color: #071f3e;
+}
+
+body.dark-mode a {
+    color: #e8f1fc;
+}
+
+body.dark-mode a:hover {
+    color: #ffffff;
+}
+
+body.dark-mode .card {
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: rgba(255,255,255,0.1);
+    color: #ffffff;
+    border: 1px solid #e8f1fc;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #ffffffa0;
+}
+
+body.dark-mode button,
+body.dark-mode .btn {
+    background-color: #e8f1fc;
+    color: #0b3467;
+}
+
+body.dark-mode button:hover,
+body.dark-mode .btn:hover {
+    box-shadow: 0 0 15px #e8f1fc;
+}

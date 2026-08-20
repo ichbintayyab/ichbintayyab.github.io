@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | ichbintayyab</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../assets/css/shared.css">
+  <link rel="stylesheet" href="../assets/css/blog.css">
+</head>
+<body>
+  <div class="cur" id="cur"></div>
+  <div class="cur-ring" id="curRing"></div>
+  <header class="nav" id="nav">
+    <div class="nav-in">
+      <a href="../index.html" class="nav-logo">ichbin<span>tayyab</span></a>
+      <nav><ul class="nav-links">
+        <li><a href="../index.html">Home</a></li><li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li><li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html" class="nav-cta">Contact</a></li>
+      </ul></nav>
+      <button class="ham" id="ham" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mob-menu" id="mobMenu"><ul>
+    <li><a href="../index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li>
+  </ul></div>
+  <main>
+    <div class="page-hero">
+      <div class="page-hero-bg" aria-hidden="true"></div>
+      <div class="page-hero-in">
+        <div class="pg-label rv">Writing</div>
+        <h1 class="page-title rv d1">Ideas & <span class="grad-text">Reflections</span></h1>
+        <p class="page-sub rv d2">Thoughts on software engineering, developer life, artificial intelligence, and navigating the digital age.</p>
+      </div>
+    </div>
+    <section class="sec">
+      <div class="sec-in">
+        <a href="blog1.html" class="blog-featured rv" aria-label="Read: My Journey Into Software Engineering">
+          <div class="bf-img">
+            <img src="../assets/images/blogs/blog1.jpg" alt="" onerror="this.style.display='none';this.parentElement.querySelector('.bf-img-ph').style.display='flex'">
+            <div class="bf-img-ph" style="display:none" aria-hidden="true">✍️</div>
+          </div>
+          <div class="bf-body">
+            <span class="bf-badge"><i class="fas fa-star" aria-hidden="true"></i> Featured</span>
+            <div style="font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--blue-soft);margin-bottom:.75rem">Personal Growth</div>
+            <h2 class="bf-title">My Journey Into Software Engineering</h2>
+            <p class="bf-exc">Software engineering has become an important part of my life. This is the story of how it all began — the courses, the projects, the late nights, and the clarity that came with practice.</p>
+            <span class="bf-more">Read Full Article <i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+          </div>
+        </a>
+        <div class="blog-grid">
+          <a href="blog2.html" class="b-card rv d1">
+            <div class="b-img"><img src="../assets/images/blogs/blog2.jpg" alt="" onerror="this.style.display='none';this.parentElement.querySelector('.b-img-ph').style.display='flex'"><div class="b-img-ph" style="display:none" aria-hidden="true">💻</div></div>
+            <div class="b-body"><div class="b-cat">Developer Life</div><div class="b-title">Why Did I Write This? The Engineer's Existential Crisis</div><p class="b-exc">Inside a dev's brain: "it works on my machine" counts as evidence, and 2 AM is when a missing semicolon finally confesses.</p><span class="b-more">Read Article <i class="fas fa-arrow-right" aria-hidden="true"></i></span></div>
+          </a>
+          <a href="blog3.html" class="b-card rv d2">
+            <div class="b-img"><img src="../assets/images/blogs/blog3.jpg" alt="" onerror="this.style.display='none';this.parentElement.querySelector('.b-img-ph').style.display='flex'"><div class="b-img-ph" style="display:none" aria-hidden="true">🤖</div></div>
+            <div class="b-body"><div class="b-cat">AI & Technology</div><div class="b-title">The Architecture of Thought: Human vs AI</div><p class="b-exc">Human intuition feels and understands; AI calculates and predicts. Where exactly does the line between them lie?</p><span class="b-more">Read Article <i class="fas fa-arrow-right" aria-hidden="true"></i></span></div>
+          </a>
+          <a href="blog4.html" class="b-card rv d3">
+            <div class="b-img"><img src="../assets/images/blogs/blog4.jpg" alt="" onerror="this.style.display='none';this.parentElement.querySelector('.b-img-ph').style.display='flex'"><div class="b-img-ph" style="display:none" aria-hidden="true">🚀</div></div>
+            <div class="b-body"><div class="b-cat">Digital Age</div><div class="b-title">Mastering the Digital Age: How to Benefit from Tech</div><p class="b-exc">Stop consuming — start creating. Use modern software and automation to scale your productivity and unlock global opportunities.</p><span class="b-more">Read Article <i class="fas fa-arrow-right" aria-hidden="true"></i></span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="ft-in">
+    <a href="../index.html" class="ft-logo">ichbin<span>tayyab</span></a>
+    <ul class="ft-nav"><li><a href="../index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="blog.html">Blog</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <div class="ft-socials">
+      <a href="https://github.com/ichbintayyab" target="_blank" rel="noopener" class="ft-soc" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+      <a href="https://linkedin.com/in/ichbintayyab" target="_blank" rel="noopener" class="ft-soc" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/ichbintayyab" target="_blank" rel="noopener" class="ft-soc" aria-label="Twitter"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+      <a href="https://facebook.com/ichbintayyab" target="_blank" rel="noopener" class="ft-soc" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+      <a href="https://instagram.com/ichbintayyab" target="_blank" rel="noopener" class="ft-soc" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://youtube.com/@ichbintayyab" target="_blank" rel="noopener" class="ft-soc" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+    </div>
+    <p class="ft-copy">© 2026 ichbintayyab · All rights reserved.</p>
+  </div></footer>
+  <script src="../assets/js/shared.js"></script>
+</body>
+</html>
